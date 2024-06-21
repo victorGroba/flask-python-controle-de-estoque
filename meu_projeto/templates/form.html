@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CONTROLE DE ESTOQUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        /* Estilo para a lista de registros */
+        #lista-registros {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Estoque</h1>
+        <p>Responsável Técnico: José Victor</p>
+        <!-- Formulário para registrar itens -->
+        <form id="form-registrar" action="{{ url_for('registrar') }}" method="POST">
+            <!-- Campo para o nome -->
+            <div class="form-group">
+                <label for="nome">Pessoa Solicitante:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <!-- Campo para o material -->
+            <div class="form-group">
+                <label for="material">Material Utilizado:</label>
+                <input type="text" class="form-control" id="material" name="material" required>
+            </div>
+            <!-- Campo para a quantidade -->
+            <div class="form-group">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+            </div>
+            <!-- Botão para registrar -->
+            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+            <!-- Campo oculto para armazenar o último nome registrado -->
+            <input type="hidden" id="ultimo-nome" name="ultimo_nome" value="">
+        </form>
+        
+        <!-- Botão para limpar o resumo de registros exibidos -->
+        <form id="form-limpar" action="{{ url_for('limpar_registros_exibidos') }}" method="POST">
+            <button type="submit" class="btn btn-danger mt-3">Limpar Resumo</button>
+        </form>
+        
+        <!-- Div para exibir a lista de registros -->
+        <div id="lista-registros">
+            {% if registros %}
+                {% for registro in registros %}
+                <div class="alert alert-success mt-3" role="alert">
+                    <strong>Registro realizado:</strong><br>
+                    <span>Pessoa Solicitante: {{ registro.nome }}</span><br>
+                    <span>Material Utilizado: {{ registro.material }}</span><br>
+                    <span>Quantidade: {{ registro.quantidade }}</span><br>
+                    <span>Data e Hora: {{ registro.data_hora }}</span><br>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="alert alert-info mt-3" role="alert">
+                    Nenhum registro disponível.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Função para carregar os registros salvos
+        function carregarRegistros() {
+            fetch('/ver_registros')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('lista-registros').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar registros:', error));
+        }
+        
+        // Carrega os registros ao carregar a página
+        carregarRegistros();
+        
+        // Função para armazenar o último nome registrado localmente
+        function armazenarUltimoNome(nome) {
+            localStorage.setItem('ultimoNome', nome);
+        }
+        
+        // Função para carregar o último nome registrado localmente
+        function carregarUltimoNome() {
+            let ultimoNome = localStorage.getItem('ultimoNome');
+            if (ultimoNome) {
+                document.getElementById('nome').value = ultimoNome;
+                document.getElementById('ultimo-nome').value = ultimoNome;
+            }
+        }
+        
+        // Carrega o último nome registrado ao carregar a página
+        carregarUltimoNome();
+        
+        // Captura o envio do formulário de limpar registros
+        document.getElementById('form-limpar').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            fetch('/limpar_registros_exibidos', {
+                method: 'POST'
+            })
+            .then(response => response.text())
+            .then(() => {
+                // Limpa a lista de registros exibidos na página
+                document.getElementById('lista-registros').innerHTML = `
+                    <div class="alert alert-info mt-3" role="alert">
+                        Nenhum registro disponível.
+                    </div>
+                `;
+            })
+            .catch(error => console.error('Erro ao limpar registros:', error));
+        });
+        
+        // Captura o envio do formulário de registrar novos registros
+        document.getElementById('form-registrar').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            let formData = new FormData(this);
+            
+            fetch('/registrar', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Monta o HTML para o novo registro
+                let registroHTML = `<div class="alert alert-success mt-3" role="alert">`;
+                registroHTML += `<strong>Registro realizado com sucesso:</strong><br>`;
+                registroHTML += `<span>Pessoa Solicitante: ${data.nome}</span><br>`;
+                registroHTML += `<span>Material Utilizado: ${data.material}</span><br>`;
+                registroHTML += `<span>Quantidade: ${data.quantidade}</span><br>`;
+                registroHTML += `<span>Data e Hora: ${data.data_hora}</span><br>`;
+                registroHTML += `</div>`;
+                
+                // Adiciona o novo registro à lista de registros
+                document.getElementById('lista-registros').insertAdjacentHTML('beforeend', registroHTML);
+                
+                // Armazena o último nome registrado localmente
+                armazenarUltimoNome(data.nome);
+                
+                // Limpa o formulário após o registro (opcional)
+                document.getElementById('form-registrar').reset();
+            })
+            .catch(error => console.error('Erro ao registrar:', error));
+        });
+    </script>
+</body>
+</html>

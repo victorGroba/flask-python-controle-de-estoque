@@ -1,0 +1,5 @@
+Nome: 3, Material: 3, Quantidade: 1
+Nome: 33, Material: 33, Quantidade: 3
+Nome: 3, Material: 3, Quantidade: 2
+Nome: teste, Material: teste, Quantidade: 1
+Nome: José, Material: TSA, Quantidade: 5

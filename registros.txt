@@ -1,0 +1,16 @@
+2024-06-21 12:13:17 | Nome: Jos�, Material: TSA, Quantidade: 20
+2024-06-21 12:17:01 | Nome: tsa, Material: tsa, Quantidade: 1
+2024-06-21 12:22:48 | Nome: TSA, Material: TSA, Quantidade: 123
+2024-06-21 12:26:28 | Nome: TSA, Material: TSA, Quantidade: 123
+2024-06-21 12:26:48 | Nome: jose, Material: TSA, Quantidade: 1
+2024-06-21 12:26:58 | Nome: gerw, Material: rewwerw, Quantidade: 1
+2024-06-21 12:27:18 | Nome: teste final, Material: teste final, Quantidade: 100
+2024-06-21 12:29:42 | Nome: Jos�, Material: DRBC, Quantidade: 50
+2024-06-21 12:33:21 | Nome: Jos�, Material: tsa, Quantidade: 5
+2024-06-21 12:35:39 | Nome: Jos� , Material: TSA, Quantidade: 5
+2024-06-21 12:48:23 | Nome: Jos� , Material: Tsa, Quantidade: 5
+2024-06-21 12:51:20 | Nome: Jos� , Material: Teste , Quantidade: 1251
+2024-06-21 12:55:59 | Nome: Juan Quintanilha, Material:  leite Ferro, Quantidade: 6
+2024-06-21 12:59:14 | Nome: Yan, Material: MYP, Quantidade: 10
+2024-06-21 12:59:15 | Nome: Yan, Material: MYP, Quantidade: 10
+2024-06-21 12:59:15 | Nome: Yan, Material: MYP, Quantidade: 10
