@@ -1,16 +1,252 @@
-2024-06-21 12:13:17 | Nome: Josï¿½, Material: TSA, Quantidade: 20
-2024-06-21 12:17:01 | Nome: tsa, Material: tsa, Quantidade: 1
-2024-06-21 12:22:48 | Nome: TSA, Material: TSA, Quantidade: 123
-2024-06-21 12:26:28 | Nome: TSA, Material: TSA, Quantidade: 123
-2024-06-21 12:26:48 | Nome: jose, Material: TSA, Quantidade: 1
-2024-06-21 12:26:58 | Nome: gerw, Material: rewwerw, Quantidade: 1
-2024-06-21 12:27:18 | Nome: teste final, Material: teste final, Quantidade: 100
-2024-06-21 12:29:42 | Nome: Josï¿½, Material: DRBC, Quantidade: 50
-2024-06-21 12:33:21 | Nome: Josï¿½, Material: tsa, Quantidade: 5
-2024-06-21 12:35:39 | Nome: Josï¿½ , Material: TSA, Quantidade: 5
-2024-06-21 12:48:23 | Nome: Josï¿½ , Material: Tsa, Quantidade: 5
-2024-06-21 12:51:20 | Nome: Josï¿½ , Material: Teste , Quantidade: 1251
-2024-06-21 12:55:59 | Nome: Juan Quintanilha, Material:  leite Ferro, Quantidade: 6
-2024-06-21 12:59:14 | Nome: Yan, Material: MYP, Quantidade: 10
-2024-06-21 12:59:15 | Nome: Yan, Material: MYP, Quantidade: 10
-2024-06-21 12:59:15 | Nome: Yan, Material: MYP, Quantidade: 10
+2024-06-25 10:59:25 | Nome: Juan Quintanilha, Material: Rappaport , Quantidade: 12
+2024-06-25 13:57:15 | Nome: Yan, Material: BPW, Quantidade: 65
+2024-06-25 15:57:13 | Nome: Teste de rede , Material: 17:57, Quantidade: 1
+2024-06-25 16:38:04 | Nome: Bento, Material: Tsc, Quantidade: 2
+2024-06-25 16:38:24 | Nome: Bento, Material: MYP, Quantidade: 4
+2024-06-25 17:10:28 | Nome: VICTOR HUGO CAMILO EVANGELISTA, Material: M-endo, Quantidade: 2
+2024-06-25 17:10:47 | Nome: VICTOR HUGO CAMILO EVANGELISTA, Material: M-E, Quantidade: 2
+2024-06-25 17:11:03 | Nome: VICTOR HUGO CAMILO EVANGELISTA, Material: TSC, Quantidade: 3
+2024-06-25 17:11:15 | Nome: VICTOR HUGO CAMILO EVANGELISTA, Material: TSA, Quantidade: 2
+2024-06-25 17:12:26 | Nome: VICTOR HUGO CAMILO EVANGELISTA, Material: M-Pac, Quantidade: 2
+2024-06-26 08:12:48 | Nome: Teste de rede , Material: 1, Quantidade: 1
+2024-06-26 09:23:59 | Nome: Josï¿½ Victor , Material: teste de rede, Quantidade: 1
+2024-06-26 12:22:46 | Nome: Teste de rede , Material: Teste de rede, Quantidade: 1
+2024-06-26 15:23:04 | Nome: Teste de rede , Material: 1, Quantidade: 1
+2024-06-26 15:23:51 | Nome: Yan, Material: MYP, Quantidade: 50
+2024-06-26 15:24:26 | Nome: Yan, Material: DRBC, Quantidade: 9
+2024-06-26 15:24:41 | Nome: Yan, Material: Frasco de TSC, Quantidade: 2
+2024-06-26 15:24:57 | Nome: Yan, Material: Frasco de VRBG, Quantidade: 1
+2024-06-26 15:26:18 | Nome: Yan, Material: Frasco de PCA, Quantidade: 5
+2024-06-27 09:15:01 | Nome: Juan Quintanilha, Material: Caldo EC , Quantidade: 22
+2024-06-27 09:15:57 | Nome: Juan Quintanilha, Material: EC mug , Quantidade: 8
+2024-06-27 09:16:42 | Nome: Juan Quintanilha, Material: Rappaport , Quantidade: 64
+2024-06-27 09:17:28 | Nome: Juan Quintanilha, Material: Lauryl , Quantidade: 1
+2024-06-27 09:30:00 | Nome: Yan, Material: Frasco de PCA, Quantidade: 11
+2024-06-27 09:30:37 | Nome: Yan, Material: BPW, Quantidade: 66
+2024-06-27 09:31:12 | Nome: Yan, Material: Frasco de VRBA de 500ml, Quantidade: 1
+2024-06-27 09:32:05 | Nome: Yan, Material: MYP, Quantidade: 43
+2024-06-27 09:32:18 | Nome: Yan, Material: BP, Quantidade: 10
+2024-06-27 09:32:32 | Nome: Yan, Material: DRBC, Quantidade: 3
+2024-06-27 09:34:58 | Nome: Yan, Material: BPW, Quantidade: 5
+2024-06-27 09:35:17 | Nome: Yan, Material: TSB, Quantidade: 5
+2024-06-27 09:36:09 | Nome: Yan, Material: LEB, Quantidade: 5
+2024-06-27 09:36:47 | Nome: Yan, Material: Tubo de TSB, Quantidade: 5
+2024-06-27 09:36:57 | Nome: Yan, Material: Tubo de FT, Quantidade: 5
+2024-06-27 09:37:15 | Nome: Yan, Material: Tubo AP , Quantidade: 8
+2024-06-27 09:38:33 | Nome: Yan, Material: EMB, Quantidade: 19
+2024-06-27 09:39:24 | Nome: Yan, Material: Placa PCA, Quantidade: 11
+2024-06-27 09:40:18 | Nome: Yan, Material: BP, Quantidade: 12
+2024-06-27 18:01:58 | Nome: Juan Quintanilha, Material: Caldo EC , Quantidade: 1
+2024-06-27 18:02:18 | Nome: Juan Quintanilha, Material: EC mug , Quantidade: 3
+2024-06-27 18:02:30 | Nome: Juan Quintanilha, Material: Vbbl , Quantidade: 2
+2024-06-27 18:02:56 | Nome: Juan Quintanilha, Material: Cetrimide , Quantidade: 1
+2024-06-28 08:41:08 | Nome: Yan, Material: Frasco de PCA, Quantidade: 7
+2024-06-28 08:41:41 | Nome: Yan, Material: Frasco de TSC, Quantidade: 2
+2024-06-28 08:42:11 | Nome: Yan, Material: Placa de BP, Quantidade: 3
+2024-06-28 08:42:44 | Nome: Yan, Material: MYP, Quantidade: 22
+2024-06-28 08:43:33 | Nome: Yan, Material: Placa de PCA, Quantidade: 6
+2024-06-28 08:43:55 | Nome: Yan, Material: Frasco de VRBG, Quantidade: 1
+2024-06-28 08:44:12 | Nome: Yan, Material: EMB, Quantidade: 7
+2024-06-28 08:44:34 | Nome: Yan, Material: Placa de BP, Quantidade: 7
+2024-07-01 10:17:05 | Nome: Yan, Material: DRBC, Quantidade: 13
+2024-07-01 10:18:08 | Nome: Yan, Material: Frasco de PCA, Quantidade: 10
+2024-07-01 10:18:39 | Nome: Yan, Material: Frasco de TSC, Quantidade: 1
+2024-07-01 10:18:53 | Nome: Yan, Material: MYP, Quantidade: 27
+2024-07-01 10:20:34 | Nome: Yan, Material: EMB, Quantidade: 18
+2024-07-01 10:20:46 | Nome: Yan, Material: PLACA DE PCA, Quantidade: 16
+2024-07-01 10:20:52 | Nome: Yan, Material: BP, Quantidade: 16
+2024-07-02 11:14:25 | Nome: Josï¿½ Victor , Material: TESTE DE REDE 02/07/2024 - 11:14:17 , Quantidade: 1
+2024-07-02 11:26:21 | Nome: Yan, Material: BPW, Quantidade: 156
+2024-07-02 11:27:20 | Nome: Alessandra, Material: Macconkey, Quantidade: 5
+2024-07-02 11:27:25 | Nome: Yan, Material: DRBC, Quantidade: 1
+2024-07-02 11:28:29 | Nome: Alessandra, Material: Yersï¿½nia, Quantidade: 5
+2024-07-02 11:28:30 | Nome: Yan, Material: MYP, Quantidade: 22
+2024-07-02 11:28:40 | Nome: Yan, Material: Frasco PCA, Quantidade: 6
+2024-07-02 11:28:56 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-07-02 11:29:28 | Nome: Juan, Material: Rappaport, Quantidade: 26
+2024-07-02 11:29:32 | Nome: Yan, Material: M-E, Quantidade: 6
+2024-07-02 11:29:41 | Nome: Juan, Material: Macconkey, Quantidade: 10
+2024-07-02 11:29:58 | Nome: Yan, Material: M-Endo, Quantidade: 6
+2024-07-02 11:29:58 | Nome: Juan, Material: Yersï¿½nia, Quantidade: 10
+2024-07-03 09:25:22 | Nome: Yan, Material: Frasco de PCA, Quantidade: 5
+2024-07-03 09:27:13 | Nome: Josï¿½ Victor , Material: TESTE DE REDE, Quantidade: 1
+2024-07-03 09:29:11 | Nome: Yan, Material: Frasco de TSC, Quantidade: 1
+2024-07-03 09:29:13 | Nome: Yan, Material: Frasco de TSC, Quantidade: 1
+2024-07-03 09:29:32 | Nome: Yan, Material: MYP, Quantidade: 32
+2024-07-03 09:30:14 | Nome: Yan, Material: BPW, Quantidade: 55
+2024-07-03 09:30:38 | Nome: Yan, Material: M-E, Quantidade: 1
+2024-07-03 09:31:02 | Nome: Yan, Material: M-ENDO, Quantidade: 1
+2024-07-03 09:31:27 | Nome: Yan, Material: Rodac de TSC, Quantidade: 1
+2024-07-03 15:15:32 | Nome: Teste de rede , Material: Teste de rede , Quantidade: 1
+82024-07-03 16:34:58 | Nome: Teste de rede , Material: Teste de rede , Quantidade: 1
+2024-07-03 16:35:25 | Nome: TESTE DE REDE , Material: Salï¿½o principal , Quantidade: 1
+2024-07-03 16:36:01 | Nome: TESTE DE REDE , Material: Sala de leitura , Quantidade: 1
+2024-07-03 16:36:27 | Nome: TESTE DE REDE , Material: Sala do Bruno , Quantidade: 1
+2024-07-03 16:37:01 | Nome: TESTE DE REDE , Material: Expurgo , Quantidade: 1
+2024-07-03 16:53:17 | Nome: Brenno, Material: Pca, Quantidade: 32
+2024-07-03 16:53:53 | Nome: Brenno, Material: Emb, Quantidade: 31
+2024-07-03 16:54:09 | Nome: Brenno, Material: Bp, Quantidade: 31
+2024-07-03 17:40:35 | Nome: Teste de rede, Material: Teste de rede, Quantidade: 1
+2024-07-03 18:04:14 | Nome: teste de rede, Material: Sala de meios, Quantidade: 1
+2024-07-03 18:05:55 | Nome: TESTE DE REDE , Material: Outra rede , Quantidade: 1
+2024-07-03 18:06:49 | Nome: wifi MATTOS, Material: TESTE DE REDE, Quantidade: 1
+2024-07-04 08:35:02 | Nome: Joï¿½o Paulo, Material: LEB tubo, Quantidade: 6
+2024-07-04 08:37:33 | Nome: Teste de Rede, Material: Teste sala de meios, Quantidade: 1
+2024-07-04 08:49:09 | Nome: Teste de rede , Material: Sala de leitura , Quantidade: 1
+2024-07-04 08:49:43 | Nome: Teste de rede , Material: Sala do Bruno , Quantidade: 1
+2024-07-04 08:50:17 | Nome: Teste de rede , Material: Corredor , Quantidade: 1
+2024-07-04 08:50:37 | Nome: Teste de rede , Material: Sala fluxo 01, Quantidade: 1
+2024-07-04 08:50:54 | Nome: Teste de rede , Material: Sala de pesagem , Quantidade: 1
+2024-07-04 08:51:27 | Nome: Teste de rede , Material: Sala de meios , Quantidade: 1
+2024-07-04 09:49:43 | Nome: Brenno madson, Material: Tsb, Quantidade: 8
+2024-07-04 09:50:11 | Nome: Brenno Madson , Material: FT, Quantidade: 8
+2024-07-04 09:50:12 | Nome: Brenno Madson , Material: FT, Quantidade: 8
+2024-07-04 09:50:16 | Nome: Brenno Madson , Material: FT, Quantidade: 8
+2024-07-04 09:50:16 | Nome: Brenno Madson , Material: FT, Quantidade: 8
+2024-07-04 09:50:21 | Nome: Brenno Madson , Material: Ft, Quantidade: 8
+2024-07-04 09:50:59 | Nome: Brenno Madson , Material: ap, Quantidade: 10
+2024-07-04 09:52:01 | Nome: Brenno Madson, Material: Pca frasco, Quantidade: 6
+2024-07-04 09:52:29 | Nome: Brenno Madson , Material: DRBC, Quantidade: 12
+2024-07-04 09:53:41 | Nome: Brenno Madson, Material: MYP, Quantidade: 16
+2024-07-04 09:54:09 | Nome: Brenno Madson, Material: Frasco tsc, Quantidade: 1
+2024-07-04 09:54:55 | Nome: Brenno Madson , Material: BPW, Quantidade: 31
+2024-07-05 08:15:45 | Nome: Yan, Material: Frasco de TSC, Quantidade: 2
+2024-07-05 08:16:17 | Nome: Yan, Material: BPW, Quantidade: 60
+2024-07-05 08:16:36 | Nome: Yan, Material: FRASCO DE VRBA 500ML, Quantidade: 1
+2024-07-05 08:16:50 | Nome: Yan, Material: MYP, Quantidade: 60
+2024-07-05 08:17:08 | Nome: Yan, Material: TSB, Quantidade: 5
+2024-07-05 08:17:17 | Nome: Yan, Material: LEB, Quantidade: 5
+2024-07-05 08:17:41 | Nome: Yan, Material: FT, Quantidade: 8
+2024-07-05 08:17:58 | Nome: Yan, Material: TUBO DE TSB, Quantidade: 8
+2024-07-05 08:19:26 | Nome: Yan, Material: Frasco de PCA, Quantidade: 7
+2024-07-05 08:20:01 | Nome: Yan, Material: DRBC, Quantidade: 9
+2024-07-05 13:27:33 | Nome: Teste de Rede, Material: bpw, Quantidade: 1
+2024-07-05 13:32:05 | Nome: teste, Material: EC MU, Quantidade: 1
+2024-07-05 13:42:21 | Nome: Teste de rede , Material: BPW, Quantidade: 1
+2024-07-08 09:36:00 | Nome: Yan, Material: DRBC, Quantidade: 2
+2024-07-08 09:36:21 | Nome: Yan, Material: MYP, Quantidade: 13
+2024-07-08 09:37:02 | Nome: Yan, Material: FRASCO DE PCA, Quantidade: 7
+2024-07-08 09:37:45 | Nome: Yan, Material: FRASCO DE VRBG 500ML, Quantidade: 1
+2024-07-08 09:42:38 | Nome: Yan, Material: PLACA DE PCA, Quantidade: 90
+2024-07-08 09:42:50 | Nome: Yan, Material: EMB, Quantidade: 90
+2024-07-08 09:43:00 | Nome: Yan, Material: BP, Quantidade: 90
+2024-07-08 09:43:25 | Nome: Yan, Material: BPW, Quantidade: 42
+2024-07-09 08:59:20 | Nome: Teste de rede , Material: TESTE DE REDE, Quantidade: 1
+2024-07-09 09:15:46 | Nome: Yan, Material: FRASCO DE PCA, Quantidade: 3
+2024-07-09 09:15:58 | Nome: Yan, Material: BP, Quantidade: 13
+2024-07-09 09:16:05 | Nome: Yan, Material: EMB, Quantidade: 12
+2024-07-09 09:16:21 | Nome: Yan, Material: PLACA DE PCA, Quantidade: 13
+2024-07-09 09:16:31 | Nome: Yan, Material: MYP, Quantidade: 30
+2024-07-09 09:16:54 | Nome: Yan, Material: FRASCO DE TSC, Quantidade: 3
+2024-07-09 09:17:10 | Nome: Yan, Material: TUBO DE LEB, Quantidade: 1
+2024-07-09 09:17:24 | Nome: Yan, Material: TUBO DE TSB, Quantidade: 1
+2024-07-09 09:21:35 | Nome: Yan, Material: DRBC, Quantidade: 3
+2024-07-09 09:23:21 | Nome: Yan, Material: BPW, Quantidade: 40
+2024-07-10 15:44:41 | Nome: Yan, Material: BPW, Quantidade: 37
+2024-07-10 15:44:52 | Nome: Yan, Material: MYP, Quantidade: 15
+2024-07-10 15:45:12 | Nome: Yan, Material: FRASCO TSC, Quantidade: 9
+2024-07-10 15:45:35 | Nome: Yan, Material: FRASCO DE PCA, Quantidade: 4
+2024-07-12 12:15:24 | Nome: Yan, Material: BPW, Quantidade: 51
+2024-07-12 12:15:35 | Nome: Yan, Material: BP, Quantidade: 16
+2024-07-12 12:15:45 | Nome: Yan, Material: DRBC, Quantidade: 12
+2024-07-12 12:16:04 | Nome: Yan, Material: MYP, Quantidade: 41
+2024-07-12 12:16:18 | Nome: Yan, Material: OXFORD, Quantidade: 11
+2024-07-12 12:16:46 | Nome: Yan, Material: VRBA 500ML, Quantidade: 1
+2024-07-12 12:16:55 | Nome: Yan, Material: VRBA 250ML, Quantidade: 1
+2024-07-12 12:17:08 | Nome: Yan, Material: VRBG 500ML, Quantidade: 1
+2024-07-12 12:17:17 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-07-12 12:17:36 | Nome: Yan, Material: FRASCO PCA, Quantidade: 8
+2024-07-12 12:17:56 | Nome: Yan, Material: FRASCO LEB, Quantidade: 5
+2024-07-12 12:18:04 | Nome: Yan, Material: FRASCO TSB, Quantidade: 5
+2024-07-12 12:18:34 | Nome: Yan, Material: EMB, Quantidade: 13
+2024-07-12 12:18:41 | Nome: Yan, Material: BP, Quantidade: 13
+2024-07-12 12:18:51 | Nome: Yan, Material: PLACA PCA, Quantidade: 13
+2024-07-12 12:19:07 | Nome: Yan, Material: DRBC, Quantidade: 3
+2024-07-12 12:19:16 | Nome: Yan, Material: MYP, Quantidade: 19
+2024-07-12 12:19:24 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-07-12 12:19:54 | Nome: Yan, Material: BPW, Quantidade: 64
+2024-07-12 12:20:19 | Nome: Yan, Material: FRASCO PCA, Quantidade: 5
+2024-07-12 12:49:22 | Nome: Yan, Material: TUBO TSB, Quantidade: 7
+2024-07-12 12:49:38 | Nome: Yan, Material: TUBO FT, Quantidade: 7
+2024-08-07 10:45:58 | Nome: teste de rede , Material: TESTE , Quantidade: 1
+2024-08-09 09:12:20 | Nome: Teste de rede , Material: TESTE DE REDE 09/08/2024 9:12 HORAS, Quantidade: 1
+2024-08-09 11:15:05 | Nome: Yan, Material: FRASCO PCA, Quantidade: 14
+2024-08-09 11:16:00 | Nome: Yan, Material: MYP, Quantidade: 35
+2024-08-09 11:16:23 | Nome: Yan , Material: FRASCO TSC, Quantidade: 3
+2024-08-09 11:16:51 | Nome: Yan, Material: DRBC, Quantidade: 4
+2024-08-09 11:17:03 | Nome: Yan, Material: OXFORD, Quantidade: 9
+2024-08-09 11:17:41 | Nome: Yan, Material: VRBG 250ML , Quantidade: 2
+2024-08-09 11:17:55 | Nome: Yan, Material: VRBA 500ML, Quantidade: 1
+2024-08-09 11:18:36 | Nome: Yan, Material: EMB, Quantidade: 10
+2024-08-09 11:18:46 | Nome: Yan, Material: PLACA PCA, Quantidade: 10
+2024-08-09 11:18:55 | Nome: Yan, Material: BP, Quantidade: 10
+2024-08-09 11:19:49 | Nome: Yan, Material: BPW, Quantidade: 73
+2024-08-09 11:20:07 | Nome: Yan, Material: FRASCO LEB, Quantidade: 10
+2024-08-09 11:20:16 | Nome: Yan, Material: FRASCO TSB, Quantidade: 10
+2024-08-09 11:20:37 | Nome: Yan, Material: BP, Quantidade: 10
+2024-08-12 11:30:29 | Nome: Yan, Material: BPW, Quantidade: 47
+2024-08-12 11:30:57 | Nome: Yan, Material: MYP, Quantidade: 16
+2024-08-12 11:31:47 | Nome: Yan, Material: FRASCO PCA, Quantidade: 9
+2024-08-12 11:32:08 | Nome: Yan, Material: FRASCO TSC, Quantidade: 2
+2024-08-12 11:32:08 | Nome: Yan, Material: FRASCO TSC, Quantidade: 2
+2024-08-12 11:32:20 | Nome: Yan, Material: DRBC, Quantidade: 5
+2024-08-12 11:34:16 | Nome: Yan, Material: PLACA EMB, Quantidade: 67
+2024-08-12 11:34:26 | Nome: Yan, Material: PLACA PCA, Quantidade: 67
+2024-08-12 11:34:35 | Nome: Yan, Material: PLACA BP, Quantidade: 67
+2024-08-20 15:50:36 | Nome: José Victor Fernandez Groba, Material: TESTE, Quantidade: 1
+2024-08-21 15:55:58 | Nome: Teste , Material: TESTE , Quantidade: 1
+2024-08-21 16:06:37 | Nome: Yan, Material: BPW, Quantidade: 66
+2024-08-21 16:06:56 | Nome: Yan, Material: MYP, Quantidade: 42
+2024-08-21 16:07:07 | Nome: Yan, Material: BP, Quantidade: 2
+2024-08-21 16:07:22 | Nome: Yan, Material: FRASCO TSC, Quantidade: 1
+2024-08-21 16:07:50 | Nome: Yan, Material: LEB, Quantidade: 2
+2024-08-21 16:07:57 | Nome: Yan, Material: TSB, Quantidade: 2
+2024-08-21 16:09:04 | Nome: Yan, Material: FRASCO PCA 500ML, Quantidade: 3
+2024-08-21 16:09:48 | Nome: Yan, Material: VRBA 500 ML, Quantidade: 1
+2024-08-22 16:26:50 | Nome: Yan, Material: BPW, Quantidade: 59
+2024-08-22 16:27:43 | Nome: Yan, Material: MYP, Quantidade: 12
+2024-08-22 16:28:02 | Nome: Yan, Material: FRASCO DE TSC, Quantidade: 1
+2024-08-22 16:28:18 | Nome: Yan, Material: DRBC, Quantidade: 1
+2024-08-22 16:29:17 | Nome: Yan, Material: VRBG 250ML, Quantidade: 1
+2024-08-22 16:30:22 | Nome: Yan, Material: PCA 500ML, Quantidade: 3
+2024-08-22 16:30:52 | Nome: Yan, Material: EMB, Quantidade: 14
+2024-08-22 16:30:58 | Nome: Yan, Material: BP, Quantidade: 14
+2024-08-22 16:31:08 | Nome: Yan, Material: PLACA DE PCA, Quantidade: 14
+2024-08-26 13:45:50 | Nome: teste de rede , Material: 1, Quantidade: 1
+2024-08-26 15:51:54 | Nome: Yan, Material: MYP, Quantidade: 35
+2024-08-26 15:52:10 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-08-26 15:53:59 | Nome: Yan, Material: BPW, Quantidade: 74
+2024-08-26 15:56:46 | Nome: Yan, Material: BPW, Quantidade: 90
+2024-08-26 15:57:31 | Nome: Yan, Material: MYP, Quantidade: 51
+2024-08-26 15:58:17 | Nome: Yan, Material: BP, Quantidade: 23
+2024-08-26 15:58:23 | Nome: Yan, Material: EMB, Quantidade: 8
+2024-08-26 15:58:36 | Nome: Yan, Material: PLACA DE PCA, Quantidade: 8
+2024-08-26 15:58:50 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-08-26 15:59:03 | Nome: Yan, Material: DRBC, Quantidade: 6
+2024-08-26 15:59:23 | Nome: Yan, Material: VRBG 250ML, Quantidade: 1
+2024-08-26 15:59:41 | Nome: Yan, Material: TUBO DE LEB, Quantidade: 16
+2024-08-26 15:59:56 | Nome: Yan, Material: VRBA 500ML, Quantidade: 1
+2024-08-26 16:01:38 | Nome: Yan, Material: FRASCO PCA, Quantidade: 4
+2024-08-26 16:02:11 | Nome: Yan, Material: TUBO DE TSB, Quantidade: 7
+2024-08-26 16:02:20 | Nome: Yan, Material: TUBO DE FT, Quantidade: 7
+2024-08-27 08:37:06 | Nome: Yan, Material: BPW, Quantidade: 24
+2024-08-27 08:37:14 | Nome: Yan, Material: MYP, Quantidade: 17
+2024-08-27 08:37:26 | Nome: Yan, Material: TSC, Quantidade: 1
+2024-08-27 08:37:44 | Nome: Yan, Material: VRBG 250ML, Quantidade: 1
+2024-08-27 08:39:03 | Nome: Yan, Material: FRASCO PCA 500ML, Quantidade: 1
+2024-08-29 10:38:53 | Nome: Yan, Material: BPW, Quantidade: 119
+2024-08-29 10:39:21 | Nome: Yan, Material: TSB, Quantidade: 5
+2024-08-29 10:39:27 | Nome: Yan, Material: LEB, Quantidade: 5
+2024-08-29 10:40:43 | Nome: Yan, Material: MYP, Quantidade: 67
+2024-08-29 10:41:04 | Nome: Yan, Material: DRBC, Quantidade: 17
+2024-08-29 10:41:17 | Nome: Yan, Material: TSC, Quantidade: 2
+2024-08-29 10:41:47 | Nome: Yan, Material: OXFORD, Quantidade: 4
+2024-08-29 10:42:26 | Nome: Yan, Material: VRBA 500ML, Quantidade: 1
+2024-08-29 10:42:40 | Nome: Yan, Material: VRBG 500ML, Quantidade: 1
+2024-08-29 10:44:02 | Nome: Yan, Material: BP, Quantidade: 30
+2024-08-29 10:44:34 | Nome: Yan, Material: PLACA PCA, Quantidade: 19
+2024-08-29 10:44:41 | Nome: Yan, Material: EMB, Quantidade: 19
+2024-08-29 10:49:39 | Nome: Yan, Material: FRASCO PCA 500ML, Quantidade: 4
+2024-08-29 10:52:12 | Nome: Yan, Material: M-ENDO, Quantidade: 18
+2024-08-29 10:52:22 | Nome: Yan, Material: M-E, Quantidade: 18
+2024-08-29 10:52:37 | Nome: Yan, Material: RODAC DE TSC, Quantidade: 9

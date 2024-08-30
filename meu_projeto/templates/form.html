@@ -36,8 +36,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo da Empresa" class="logo">
+        </div>
         <h1>Controle de Estoque</h1>
-        <p>Responsável Técnico: José Victor</p>
+        <p>Responsável Técnico: <a href="#" target="_blank" rel="external">José Victor</a></p>
         <!-- Formulário para registrar itens -->
         <form id="form-registrar" action="{{ url_for('registrar') }}" method="POST">
             <!-- Campo para o nome -->
@@ -48,7 +51,10 @@
             <!-- Campo para o material -->
             <div class="form-group">
                 <label for="material">Material Utilizado:</label>
-                <input type="text" class="form-control" id="material" name="material" required>
+                <input type="text" class="form-control" id="material" name="material" list="itensEstoque" required>
+                <datalist id="itensEstoque">
+                    <!-- Opções de autocomplete serão inseridas dinamicamente pelo JavaScript -->
+                </datalist>
             </div>
             <!-- Campo para a quantidade -->
             <div class="form-group">
@@ -92,35 +98,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script>
-        // Função para carregar os registros salvos
-        function carregarRegistros() {
-            fetch('/ver_registros')
-                .then(response => response.text())
+        // Função para carregar os itens do estoque para autocomplete
+        function carregarItensEstoque() {
+            fetch('/api/itens_estoque')
+                .then(response => response.json())
                 .then(data => {
-                    document.getElementById('lista-registros').innerHTML = data;
+                    const inputMaterial = document.getElementById('material');
+                    inputMaterial.addEventListener('input', function() {
+                        const valorAtual = this.value.toUpperCase();
+                        const datalist = document.createElement('datalist');
+                        datalist.id = 'itensEstoque';
+                        data.forEach(item => {
+                            if (item.toUpperCase().includes(valorAtual)) {
+                                const option = document.createElement('option');
+                                option.value = item;
+                                datalist.appendChild(option);
+                            }
+                        });
+                        // Remove datalist anterior e adiciona o novo
+                        const oldDatalist = document.getElementById('itensEstoque');
+                        if (oldDatalist) {
+                            oldDatalist.parentNode.removeChild(oldDatalist);
+                        }
+                        document.body.appendChild(datalist);
+                        inputMaterial.setAttribute('list', 'itensEstoque');
+                    });
                 })
-                .catch(error => console.error('Erro ao carregar registros:', error));
+                .catch(error => console.error('Erro ao carregar itens do estoque:', error));
         }
         
-        // Carrega os registros ao carregar a página
-        carregarRegistros();
-        
-        // Função para armazenar o último nome registrado localmente
-        function armazenarUltimoNome(nome) {
-            localStorage.setItem('ultimoNome', nome);
-        }
-        
-        // Função para carregar o último nome registrado localmente
-        function carregarUltimoNome() {
-            let ultimoNome = localStorage.getItem('ultimoNome');
-            if (ultimoNome) {
-                document.getElementById('nome').value = ultimoNome;
-                document.getElementById('ultimo-nome').value = ultimoNome;
-            }
-        }
-        
-        // Carrega o último nome registrado ao carregar a página
-        carregarUltimoNome();
+        // Carrega os itens do estoque ao carregar a página
+        carregarItensEstoque();
         
         // Captura o envio do formulário de limpar registros
         document.getElementById('form-limpar').addEventListener('submit', function(event) {
@@ -132,11 +140,8 @@
             .then(response => response.text())
             .then(() => {
                 // Limpa a lista de registros exibidos na página
-                document.getElementById('lista-registros').innerHTML = `
-                    <div class="alert alert-info mt-3" role="alert">
-                        Nenhum registro disponível.
-                    </div>
-                `;
+                document.getElementById('lista-registros').innerHTML = 
+                    '<div class="alert alert-info mt-3" role="alert">Nenhum registro disponível.</div>';
             })
             .catch(error => console.error('Erro ao limpar registros:', error));
         });
@@ -154,13 +159,13 @@
             .then(response => response.json())
             .then(data => {
                 // Monta o HTML para o novo registro
-                let registroHTML = `<div class="alert alert-success mt-3" role="alert">`;
-                registroHTML += `<strong>Registro realizado com sucesso:</strong><br>`;
-                registroHTML += `<span>Pessoa Solicitante: ${data.nome}</span><br>`;
-                registroHTML += `<span>Material Utilizado: ${data.material}</span><br>`;
-                registroHTML += `<span>Quantidade: ${data.quantidade}</span><br>`;
-                registroHTML += `<span>Data e Hora: ${data.data_hora}</span><br>`;
-                registroHTML += `</div>`;
+                let registroHTML = '<div class="alert alert-success mt-3" role="alert">';
+                registroHTML += '<strong>Registro realizado com sucesso:</strong><br>';
+                registroHTML += '<span>Pessoa Solicitante: ' + data.nome + '</span><br>';
+                registroHTML += '<span>Material Utilizado: ' + data.material + '</span><br>';
+                registroHTML += '<span>Quantidade: ' + data.quantidade + '</span><br>';
+                registroHTML += '<span>Data e Hora: ' + data.data_hora + '</span><br>';
+                registroHTML += '</div>';
                 
                 // Adiciona o novo registro à lista de registros
                 document.getElementById('lista-registros').insertAdjacentHTML('beforeend', registroHTML);
@@ -173,6 +178,32 @@
             })
             .catch(error => console.error('Erro ao registrar:', error));
         });
+        
+        // Função para converter o texto do campo de material para maiúsculas
+        function converterParaMaiusculas() {
+            let inputMaterial = document.getElementById('material');
+            inputMaterial.value = inputMaterial.value.toUpperCase();
+        }
+        
+        // Evento para capturar a entrada do usuário no campo de material e converter para maiúsculas
+        document.getElementById('material').addEventListener('input', converterParaMaiusculas);
+        
+        // Função para armazenar o último nome registrado localmente
+        function armazenarUltimoNome(nome) {
+            localStorage.setItem('ultimoNome', nome);
+        }
+        
+        // Função para carregar o último nome registrado localmente
+        function carregarUltimoNome() {
+            let ultimoNome = localStorage.getItem('ultimoNome');
+            if (ultimoNome) {
+                document.getElementById('nome').value = ultimoNome;
+                document.getElementById('ultimo-nome').value = ultimoNome;
+            }
+        }
+        
+        // Carrega o último nome registrado ao carregar a página
+        carregarUltimoNome();
     </script>
 </body>
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Temperatura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+        }
+        .container {
+            margin-top: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .logo img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .card {
+            border: none;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #343a40; /* Cinza escuro */
+            color: #ffffff; /* Cor do texto */
+            border-bottom: 1px solid #343a40; /* Borda inferior para combinar com o fundo */
+            cursor: pointer;
+        }
+        .card-header h2 {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .btn-print {
+            margin-bottom: 20px;
+        }
+        .no-print {
+            display: none;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .btn-print {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+        @media screen {
+            .btn-print {
+                display: inline-block;
+            }
+        }
+        .table {
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .table thead th {
+            background-color: #343a40; /* Cinza escuro */
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .table td, .table th {
+            padding: 12px;
+            text-align: center;
+        }
+        .month-year {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo da Empresa">
+        </div>
+        <h1 class="text-center">Relatórios de Temperatura</h1>
+        
+        <div id="accordion">
+            {% for report in instrument_reports %}
+            <div class="card">
+                <div class="card-header" id="heading{{ loop.index }}">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="true" aria-controls="collapse{{ loop.index }}" style="color: #ffffff; text-decoration: none;">
+                            {{ report.sheet_name }} - {{ report.month_year_full }}
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#accordion">
+                    <div class="card-body">
+                        <a class="btn btn-primary btn-print" href="{{ url_for('relatorio_individual', sheet_name=report.sheet_name.split(' - ')[1], month_year=report.month_year.split(' ')[1]) }}">Ver Relatório Individual</a>
+                        <div class="table-responsive">
+                            <div class="month-year text-center">
+                                Registros de {{ report.month_year }}
+                            </div>
+                            {{ report.html_table | safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
